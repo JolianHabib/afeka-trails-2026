@@ -2,7 +2,7 @@
 
 const AUTH_SERVER =
   process.env.NEXT_PUBLIC_AUTH_SERVER ||
-  "https://afeka-trails-2026-cd9x.onrender.com";
+  "https://afeka-trails-2026-085e.onrender.com";
 export async function register(firstName, lastName, email, password) {
   const res = await fetch(`${AUTH_SERVER}/api/auth/register`, {
     method: 'POST',
