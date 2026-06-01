@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-950 text-white;
+    font-family: 'Segoe UI', 'Noto Sans Hebrew', sans-serif;
+  }
+}
+
+/* Leaflet map fixes in Next.js */
+.leaflet-container {
+  background: #1a1f2e;
+  border-radius: 12px;
+}
+
+.leaflet-tile-pane img {
+  filter: brightness(0.9) saturate(1.1);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #111827; }
+::-webkit-scrollbar-thumb { background: #374151; border-radius: 3px; }
